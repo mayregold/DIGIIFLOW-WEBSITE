@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.other{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+ul li a{
+    color: gray;
+    font-weight: 600;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+.other .button a button{
+    background-color: #C0E500;
+    padding: 1em 3em;
+
+}
+.hero-section{
+    margin-top: 10em;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+}
+.text-1 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+.text-2 p{
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 600;
+}
+.works{ 
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.works .hire a button{
+    background-color: #C0E500;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+.works .explore a button{
+    background-color: gainsboro;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+.flex-image{
+    display: flex;
+    gap: 1em;
+}
+.flex-image img{
+    width: 100%;
+}
+.who a button{
+    background-color: gainsboro;
+    border: 0;
+    border-radius: 25px;
+    padding: 0.5em 1em;
+}
+.text-3 h2{
+    font-family: "Poppins", sans-serif;
+    color:  black;
+    font-weight: 600;
+    font-size: 2rem; 
+}
+.explore p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family:"Poppins", sans-serif;
+}
+.explore h1{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat( 2, 1fr);
+}
+.explore{
+    margin-top: 10em;
+}
+.h1{font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.padding-container{
+    padding: 1em 2em;
+}
+.heading h1{
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin: 0.4em 0;
+}
+.heading a button{
+    border-radius: 25px;
+    padding: 0.5em;
+    color: gray;
+    background-color: transparent;
+    border: 1px black;
+}
+.view{
+    text-align: center;
+    width: fit-content;
+    margin: 3em auto;
+}
+.view a button{
+    background-color: #C0E500;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+.web-design{
+   display: grid;
+   grid-template-columns: 1fr 3fr 4fr 1fr;
+   margin-bottom: 20px;
+}
+.web-text{
+    display: flex;
+    gap: 3em;
+}
+.seemore{
+    display: none;
+}
+.icon{
+    display: block; 
+}
+.see-button{
+    display: none;
+}
+.branding{
+   display: grid;
+   grid-template-columns: 1fr 3fr 4fr 1fr;
+   margin-bottom: 20px;
+}
+.motion{
+   display: grid;
+   grid-template-columns: 1fr 3fr 4fr 1fr;
+   margin-bottom: 20px;
+}
+.main-services{
+    margin-top: 3em ;
+}
+@media only screen and (max-width:992px){
+    .flex-container{
+        flex-direction: column;
+        align-items: unset;
+        padding: 1em 2em;
+    }
+    header{
+        padding: 1em 2em;
+    }
+    .text-1 h1 br{
+        display: none;
+    }
+    .text-2 p{
+        padding-top: 2em;
+    }
+    .text-2 br{
+        display: none;
+    }
+    .padding-container{
+        padding: 1em 2em;
+    }
+    .see-button{
+        display: block;
+    }
+    .see-button button{
+        background-color: #C0E500;
+        color: white;
+        font-weight: 600;
+        padding: 1em 2em;
+        border: 0;
+        border-radius: 5px;
+    }
+    .icon{
+        display: none;
+    }
+    .web-paragraph p br{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
